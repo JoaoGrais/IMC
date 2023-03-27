@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC Índice de Massa Corporal</title>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div class="box1">
+            <h1>IMC</h1>
+            <label for="peso">Massa (Kg)</label>
+            <input type="number" id="peso" name="peso">
+            <br>
+            <label for="altura">Altura (cm)</label>
+            <input type="number" name="altura" id="altura">
+            <br>
+            <button onclick="calcularImc()"> Calcular Massa </button>
+            <br>
+            <p>Seu Índice de massa corporal é: <span id="resultado"></span></p>
+        </div>
+
+        <div class="box2">
+            
+        </div>
+    </div>
+
+    <footer>
+        João Guilherme Grais Dias // joaoguipoa@gmail.com
+    </footer>
+
+    <script>
+
+        function calcularImc() {
+            const peso = window.document.getElementById("peso").value;
+            const altura = window.document.getElementById("altura").value;
+            const imc = peso / (altura ** 2)
+            document.getElementById("resultado").textContent = imc.toFixed(2)
+        }
+
+        let tituloDinamico = document.title;
+        window.addEventListener("blur", () => {
+            document.title = "Volta pra mim Isabeli :("
+        })
+        window.addEventListener("focus", () => {
+            document.title = tituloDinamico
+        })
+
+    </script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: Hey March;
+    src: url(./fonte/Hey\ March.otf);
+}
+
+body{
+    background-image: url(https://virtualbackgrounds.site/wp-content/uploads/2020/09/modern-home-gym.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 28vh;
+    color: white;
+
+}
+
+.container{
+    font-family: Hey March;
+    margin-right: 3vh;
+    display: flex;
+    justify-content: space-around;
+    height: 30vh;
+    color: black;
+    font-size: 20px;
+}
+
+.box1{
+    background-color: burlywood;
+    text-align: center;
+    height: 50vh;
+    width: 50vh;
+}
+
+h1{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+input{
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+button{
+    padding: 1px;
+    border-radius: 15px;
+    margin-top: 26px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    height: 40px;
+    width: 180px;
+    font-size: 23px;
+}
+
+button:hover{
+
+    background-color: black;
+    color: burlywood;
+    cursor: pointer;
+    box-shadow: 4px 4px 4px black ;
+}
+
+.box2{
+    background-image: url(https://b-change.me/wp-content/uploads/2015/01/idle3.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 80vh;
+    height: 50vh;
+}
+
+p{
+    border: solid 3px;
+    background-color: white;
+    color: black;
+
+}
+
+footer{
+    border: solid black;
+    color: black;
+    background-color: burlywood;
+    text-align: center;
+    margin-top: 200px;
+    margin-left: 500px;
+    margin-right: 500px;
+}
+
+
+
